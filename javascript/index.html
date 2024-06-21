@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    .b1{
+      background-color: lightgreen;
+      border: none;
+      padding: 5px 15px;
+      border-radius: 10px;
+    }
+    .b2{
+      background-color: burlywood;
+      padding: 5px 35px;
+      border-radius: 10px;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+   <button class="b1" onclick="cartQuantity+=10;document.querySelector('#cart').innerText=`Your Bag has ${cartQuantity} items`;
+   ">Add to cart</button>
+<button class="b2" onclick="cartQuantity--;document.querySelector('#cart').innerText=`Your Bag has ${cartQuantity} items`;" >Wishlist</button>
+<button class="b1" onclick="cartQuantity-=10;document.querySelector('#cart').innerText=`Your Bag has ${cartQuantity} items`;">Add 1+1 sale</button>
+<h1 id="cart">the just</h1>
+<script>
+let cartQuantity=0;
+document.querySelector('#cart').innerText=`Your Bag has ${cartQuantity} items`
+</script>
+</body>
+</html>
